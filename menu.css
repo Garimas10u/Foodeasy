@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@400;500&family=Roboto:wght@400500;css2?family=Amatic+SC:wght@700;css2family=Monteserrat:wght@400;500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li{
+    list-style: none;
+    
+}
+
+.navbar ul .item a{
+    padding: auto 5px ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:rgb(57, 88, 8);
+}
+.navbar ul .item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #840323;
+    width: 0;
+    height: 3px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.navbar ul .item a:hover::after{
+    width: 100%;
+}
+
+.item2{
+    margin-right: -20px;
+}
+.sign{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;   
+}
+
+.signin-btn{
+    background-color:rgb(57, 88, 8);
+    border: none;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;  
+}
+
+ul li .signin-btn a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.signin-btn:hover{
+    background-color:#840323 ;
+}
+.signup-btn:hover{
+    border-color:#840323; 
+}
+ul li .signup-btn a {
+    color:rgb(57, 88, 8);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.signup-btn{
+    border-radius: 5px;
+    border: 2px solid rgb(57, 88, 8);
+    background-color: white; 
+    height: 40px;
+    width: 110px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.signup-btn:hover{
+    border-color:#840323; 
+}
+.herobanner{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 6rem;
+    background-image: url(Food/UpdatedBanner_MENUPAGE\ \(1\).jpg);
+     background-position:  right 35% bottom 15%;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+}
+.contcaption{
+    font-size: 60px;
+    font-style: bold;
+    font-weight: 600;
+    color:#fb3b3b ;
+    text-shadow: 2px 2px 5px rgb(124, 18, 12); 
+}
+.contdesc{
+    font-size: 60px;
+    font-style: bold;
+    font-weight: 600;
+    color: rgb(199, 244, 154);
+    text-shadow: 2px 2px 5px rgb(57, 79, 8);
+    margin-bottom: 30px;
+}
+.contbtn{
+    border: none;
+    background-color:#243804;
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: #e0f2c4;
+    transition: .2s all ease;
+}
+.contbtn:hover{
+    background-color: rgb(243, 59, 59);
+    color: white;
+}
+.menuheading{
+    font-weight: 500;
+    letter-spacing: 1.56px;
+    font-size: 60px;
+    text-align: center;
+    color: #840323; 
+    text-shadow: 2px 2px 5px rgb(243, 166, 166);
+    font-family: 'DM Serif Display', serif;
+}
+.menusection{
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0px 2rem;
+    padding-top: 2vh;
+
+}
+.menusection::-webkit-scrollbar{
+    display: none;
+}
+.menu{
+    height: 400px ;
+    width: 25% ;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+background: linear-gradient(0deg, rgb(235, 190, 175) 0%, rgb(212, 248, 175) 100%);
+}
+.menuimg{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+.food p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #183a04; 
+    text-shadow: 2px 2px 5px rgb(212, 243, 166); 
+    font-family: 'Monteserrat',sans-serif;
+}
+
+.footer{
+    height: 220px;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #c6db9d;
+}
+.row{
+    display: flex;
+    flex: 4;
+    align-items: center;
+    justify-content: space-around;
+}
+.col{
+    height: 180px;
+    line-height: 1.3rem;
+    font-size: 17px;
+    color: rgb(28, 26, 23);
+}
+.col ul li{
+    list-style: none;
+}
+.col ul li a {
+    text-decoration: none;
+    color: black;
+}
+.col ul li :hover{
+    color: #840323;
+}
+.footerlogo{
+    height: 100px;
+    width: 100px;
+}
+.footrights{
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   text-align: center;
+    font-size: 1rem;
+    color:whitesmoke;
+    background-color: rgb(26, 24, 23);
+}
+#foodlast{
+    margin-bottom: 10rem;
+}
+
+

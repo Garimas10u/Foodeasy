@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@400;500&family=Roboto:wght@400500;css2family=Monteserrat:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gloock&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    /* position: relative; */
+    scroll-behavior: smooth;
+}
+.navbar{
+    min-height: 70px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 0px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li{
+    list-style: none;
+    
+}
+
+.navbar ul .item a{
+    padding: auto 5px ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(57, 88, 8);
+}
+.navbar ul .item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #840323;
+    width: 0;
+    height: 3px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.navbar ul .item a:hover::after{
+    width: 100%;
+}
+
+.item2{
+    margin-right: -20px;
+}
+.sign{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;  
+    transition: 0.2s all ease; 
+}
+
+.signin-btn{
+    background-color:rgb(57, 88, 8);
+    border: none;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;  
+}
+
+ul li .signin-btn a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+ul li .signup-btn a {
+    color: rgb(57, 88, 8);
+    font-size: 18px;
+    text-decoration: none;
+}
+ul li .signup-btn a:hover {
+    color: #840323;
+}
+.signin-btn:hover{
+    background-color:#840323 ;
+}
+.signup-btn:hover{
+    border-color:#840323; 
+}
+
+.signup-btn{
+    border-radius: 5px;
+    background-color: white; 
+    border: 2px solid rgb(57, 88, 8);
+    height: 40px;
+    width: 110px;
+    font-size: 18px;
+}
+.container{
+    min-height:600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20vh;
+}
+.left{
+    min-height:600px;
+    width: 50%;
+    background: linear-gradient(0deg, rgb(235, 190, 175) 0%, rgb(212, 248, 175) 100%);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+}
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 2vh;
+    text-align: center;
+    color: #840323;
+    font-family: 'Montserrat' sans-serif;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #840323;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color:white;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    border-radius: 5px;
+
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+textarea{
+	min-height: 150px;
+    border-radius: 5px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #840323;
+    border-radius: 5px;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: rgb(27, 42, 4);
+}
+
+.field:focus{
+    border: 2px solid rgba(17, 27, 5, 0.47);
+}
+
+.right{
+    min-height:600px;
+    width: 50%;
+    background:url(Food/contactpic.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    height: 200px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #c6db9d;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex: 4;
+    align-items: center;
+    justify-content: space-around;
+}
+.col{
+    height: 180px;
+    line-height: 1.3rem;
+    font-size: 17px;
+    color: rgb(28, 26, 23);
+}
+.col ul li{
+    list-style: none;
+}
+.col ul li a {
+    text-decoration: none;
+    color: black;
+}
+.col ul li :hover{
+    color: #840323;
+}
+.footerlogo{
+    height: 100px;
+    width: 100px;
+}
+.footrights{
+    h-eight: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1rem;
+    color:whitesmoke;
+    background-color: #840323;
+}

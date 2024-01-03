@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.cont{
+    height:100vh ;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cont .leftup{
+    /* background-color: #e6f7cc; */
+    background: linear-gradient(0deg, rgb(235, 190, 175) 0%, rgb(212, 248, 175) 100%);
+    height: 100%;
+    width: 30%;
+
+}
+.leftup h1{
+    /* color: #840323; */
+    color:rgb(16, 44, 7);
+    font-family: 'Montserrat', sans-serif;
+
+}
+.content p{
+    color: #840323;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    font-size: 18px;
+}
+.leftup img{
+    height: 200px ;
+    width: 200px;
+  
+}
+
+.cont .rightup{
+    
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.leftup .signinbtn{
+    background-color: #840323;
+    border: none;
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px; 
+}
+.leftup .signinbtn a{
+    text-decoration: none;
+    color: white;
+}
+
+.rightcontent{
+    background: linear-gradient(0deg, rgb(235, 190, 175) 0%, rgb(212, 248, 175) 100%);
+    width: 600px;
+    padding-top: 19vh;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+form{
+    padding: 3vh 14vh;
+}
+
+label{
+    color: #840323;
+}
+.rightcontent h1{
+    font-size: 32px;
+    text-align: center;
+    margin-top: -10vh;
+    /* color: #840323; */
+    color:rgb(16, 44, 7);
+    font-family: 'Montserrat', sans-serif;
+}
+.labelfld{
+    height: 50px;
+    width: 200px;
+}
+.input{
+    height: 30px ;
+    width: 400px;
+    border-radius: 5px;
+    border: none; 
+    padding: 1vh;
+   
+}
+form button{
+   margin-left: 10vw;
+   margin-top: 2vh;
+    height: 32px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #840323;
+    color: white;
+
+
+}
+form button a{
+    text-decoration: none;
+    color: white;
+}
+.name{
+    padding:1vh 0vh;
+    font-size: 18px;
+}
+.or{
+    font-size: 0.8rem;
+    margin: 1.5rem;
+    margin-left: 7vw;
+  }
+  .icons i{
+    color: rgb(4, 37, 4);
+    padding: 00.8rem 1.5rem;
+    border-radius: 10px;
+    margin-left: 3vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid rgb(19, 66, 19);
+    
+  }
+  .icons i:hover{
+    color: #fff !important;
+    background: #840323;
+    transition: 1s;
+    border-color: #840323;
+  }
+
+
